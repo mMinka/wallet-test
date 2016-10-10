@@ -8,9 +8,9 @@
     /* @ngInject */
     function UserService($q, $http, RoleStore) {
         var currentUser = {
-            displayName: 'Christos',
-            username: 'christos',
-            avatar: 'assets/images/avatars/avatar-5.png',
+            displayName: 'Tea',
+            username: 'tea',
+            avatar: 'assets/images/avatars/avatar-2.png',
             roles: ['SUPERADMIN']
         };
 
