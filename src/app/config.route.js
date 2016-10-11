@@ -46,8 +46,8 @@
 
 
         // set default routes when no path specified
-        $urlRouterProvider.when('', '/wallet-module/wallet-page');
-        $urlRouterProvider.when('/', '/wallet-module/wallet-page');
+        $urlRouterProvider.when('', '/wallet-module/balance-page');
+        $urlRouterProvider.when('/', '/wallet-module/balance-page');
 
         // always goto 404 if route not found
         $urlRouterProvider.otherwise('/404');

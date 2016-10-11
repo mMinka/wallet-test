@@ -9,9 +9,9 @@
     function moduleConfig($stateProvider, triMenuProvider) {
 
         $stateProvider
-        .state('triangular.wallet-page', {
-            url: '/wallet-module/wallet-page',
-            templateUrl: 'app/wallet-module/wallet-page.tmpl.html',
+        .state('triangular.balance-page', {
+            url: '/wallet-module/balance-page',
+            templateUrl: 'app/wallet-module/balance-page.tmpl.html',
             data: {
                 layout: {
                     contentClass: 'layout-column'
@@ -22,12 +22,25 @@
 
         triMenuProvider.addMenu({
             name: 'Wallet',
-            icon: 'fa fa-tree',
+            icon: 'fa fa-money',
             type: 'dropdown',
             priority: 1.1,
             children: [{
-                name: 'Wallet Page',
-                state: 'triangular.wallet-page',
+                name: 'Balance',
+                  icon: 'fa fa-dashboard',
+                state: 'triangular.balance-page',
+                type: 'link'
+            },
+            {
+                name: 'Pagos',
+                  icon: 'fa fa-shopping-cart',
+                state: 'triangular.balance-page',
+                type: 'link'
+            },
+            {
+                name: 'Fuentes',
+                  icon: 'fa fa-credit-card',
+                state: 'triangular.balance-page',
                 type: 'link'
             }
           ]
