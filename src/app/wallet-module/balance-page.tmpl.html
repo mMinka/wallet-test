@@ -1,9 +1,13 @@
 <div layout="row" layout-xs="column" layout-margin dragula='"drag-analytics-container"'>
         <tri-widget palette-background="triCyan:600" content-layout="column" content-layout-align="space-between center" content-padding>
-            <p class="md-display-2 font-weight-100 margin-top-10 margin-bottom-0" countupto="10" duration="1.5" decimals="0"></p>
-            <p class="md-body-2 opacity-60 margin-top-0 margin-bottom-10" translate>Lukas</p>
+            <p class="md-display-2 font-weight-100 margin-top-10 margin-bottom-0" countupto="197" duration="1.5" decimals="2"></p>
+            <p class="md-body-2 opacity-60 margin-top-0 margin-bottom-10" translate>lukas</p>
         </tri-widget>
-        <tri-widget flex-xs="100" title="Mis gastos" palette-background="triCyan:600">
+        <tri-widget palette-background="triCyan:600" content-layout="column" content-layout-align="space-between center" content-padding>
+            <p class="md-display-2 font-weight-100 margin-top-10 margin-bottom-0" countupto="420" duration="1.5" decimals="2"></p>
+            <p class="md-body-2 opacity-60 margin-top-0 margin-bottom-10" translate>soles</p>
+        </tri-widget>
+        <!-- <tri-widget flex-xs="100" title="Mis gastos" palette-background="triCyan:600">
             <md-divider></md-divider>
             <div class="full-width" layout="row" layout-padding>
                 <h4 flex="20" class="opacity-80 margin-0 margin-right-20" translate>Mercado</h4>
@@ -28,5 +32,116 @@
                     <span class="md-caption">(83% <span translate>>de limite mensual</span>)</span>
                 </div>
             </div>
-        </tri-widget>
+        </tri-widget> -->
+
+<!-- Set it up as dynamic  -->
 </div>
+
+<!-- History of transactions -->
+<md-tabs md-dynamic-height md-border-bottom md-center-tabs class="tabs-tall">
+  <md-tab>
+      <md-tab-label layout="column">
+          <span>historial</span>
+      </md-tab-label>
+      <md-tab-body>
+        <div layout="row" layout-margin>
+            <tri-widget  content-layout="column" content-layout-align="start left">
+                <md-divider></md-divider>
+                <md-list>
+                    <md-list-item class="md-2-line">
+                        <img ng-src="assets/images/avatars/avatar-2.png" class="md-avatar"/>
+                        <div class="md-list-item-text">
+
+                            <div layout="row">
+                                <span flex class="md-subhead text-dark">
+                                <span class="text-gray">Tea envio <b>10 lukas</b> a Juan</span>
+                                </span>
+                                <span class="md-caption" am-time-ago="30 minutos">hace 30 min</span>
+                            </div>
+                            <p linkify="twitter">transferencia</p>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                    <md-list-item class="md-2-line">
+                        <img ng-src="assets/images/avatars/avatar-2.png" class="md-avatar"/>
+                        <div class="md-list-item-text">
+
+                            <div layout="row">
+                                <span flex class="md-subhead text-dark">
+                                <span class="text-gray">Tea pago <b>5 lukas</b> para cafe en Juan Valdez</span>
+                                </span>
+                                <span class="md-caption" am-time-ago="30 minutos">hace 4 horas</span>
+                            </div>
+                            <p linkify="twitter">pago, comida</p>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                    <md-list-item class="md-2-line">
+                        <img ng-src="assets/images/avatars/avatar-2.png" class="md-avatar"/>
+                        <div class="md-list-item-text">
+
+                            <div layout="row">
+                                <span flex class="md-subhead text-dark">
+                                <span class="text-gray">Tea pago <b>20 lukas</b> para agua</span>
+                                </span>
+                                <span class="md-caption" am-time-ago="30 minutos">hace 2 dias</span>
+                            </div>
+                            <p linkify="twitter">pagos, agua, utilidades</p>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                    <md-list-item class="md-2-line">
+                        <img ng-src="assets/images/avatars/avatar-3.png" class="md-avatar"/>
+                        <div class="md-list-item-text">
+
+                            <div layout="row">
+                                <span flex class="md-subhead text-dark">
+                                <span class="text-gray">Damian envio <b>30 lukas</b> a Tea</span>
+                                </span>
+                                <span class="md-caption" am-time-ago="30 minutos">hace 4 dias</span>
+                            </div>
+                            <p linkify="twitter">transferencias</p>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                </md-list>
+            </tri-widget>
+        </div>
+      </md-tab-body>
+    </md-tab>
+    <md-tab>
+        <md-tab-label layout="column">
+            <span>categorias</span>
+        </md-tab-label>
+        <md-tab-body>
+            <div layout="row" layout-margin>
+          <tri-widget flex-xs="100" palette-background="triCyan:600">
+              <md-divider></md-divider>
+              <div class="full-width" layout="row" layout-padding>
+                  <h4 flex="20" class="opacity-80 margin-0 margin-right-20" translate>Mercado</h4>
+                  <div flex>
+                      <md-progress-linear class="md-warn margin-bottom-10" md-mode="determinate" value="60"></md-progress-linear>
+                      <span class="md-caption">(60% <span translate>de limite mensual</span>)</span>
+                  </div>
+              </div>
+              <md-divider flex></md-divider>
+              <div class="full-width" layout="row" layout-padding>
+                  <h4 flex="20" class="opacity-80 margin-0 margin-right-20" translate>Amazon</h4>
+                  <div flex>
+                      <md-progress-linear class="md-accent margin-bottom-10" md-mode="determinate" value="30"></md-progress-linear>
+                      <span class="md-caption">(30% <span translate>>de limite mensual</span>)</span>
+                  </div>
+              </div>
+              <md-divider flex></md-divider>
+              <div class="full-width" layout="row" layout-padding>
+                  <h4 flex="20" class="opacity-80 margin-0 margin-right-20" translate>Rumba</h4>
+                  <div flex>
+                      <md-progress-linear class="md-warn margin-bottom-10" md-mode="determinate" value="83"></md-progress-linear>
+                      <span class="md-caption">(83% <span translate>>de limite mensual</span>)</span>
+                  </div>
+              </div>
+          </tri-widget>
+        </div>
+        </md-tab-body>
+    </md-tab>
+</md-tabs>

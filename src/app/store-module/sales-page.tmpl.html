@@ -1,0 +1,22 @@
+<div class="sales-dashboard" layout="column">
+    <tri-widget title="Ventas" subtitle="Octubre" palette-background="triCyan:800" class="padding-left-40 padding-right-40 padding-top-20 padding-bottom-20 no-shadow">
+        <canvas height="300" class="chart-line" chart-data="vm.chartLineData.data" chart-labels="vm.chartLineData.labels" chart-series="vm.chartLineData.series" chart-options="vm.chartLineData.options" chart-colours="vm.chartLineData.colors"></canvas>
+    </tri-widget>
+
+    <div layout="row" layout-xs="column" layout-margin dragula='"drag-analytics-container"'>
+        <tri-widget palette-background="triCyan:600" content-layout="column" content-layout-align="space-between center" content-padding>
+            <p class="md-display-2 font-weight-100 margin-top-10 margin-bottom-0" countupto="vm.salesData.totalSales" duration="1.5" decimals="0"></p>
+            <p class="md-body-2 opacity-60 margin-top-0 margin-bottom-10" translate>Ventas mes</p>
+        </tri-widget>
+        <tri-widget palette-background="triCyan:600" content-layout="column" content-layout-align="space-between center" content-padding>
+            <p class="md-display-2 font-weight-100 margin-top-10 margin-bottom-0" countupto="vm.salesData.totalEarnings" duration="1.5" options="{ prefix: '$' }" decimals="2"></p>
+            <p class="md-body-2 opacity-60 margin-top-0 margin-bottom-10" translate>Monto mes</p>
+        </tri-widget>
+        <tri-widget palette-background="triCyan:600" content-layout="column" content-layout-align="space-between center" content-padding>
+            <p class="md-display-2 font-weight-100 margin-top-10 margin-bottom-0" countupto="120222.53" duration="1.5" options="{ prefix: '$' }" decimals="2"></p>
+            <p class="md-body-2 opacity-60 margin-top-0 margin-bottom-10" translate>Total</p>
+        </tri-widget>
+    </div>
+
+
+</div>

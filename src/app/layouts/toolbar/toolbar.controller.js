@@ -29,7 +29,7 @@
             vm.currentUser = {
                 displayName: 'Tea',
                 username: 'tea',
-                avatar: 'assets/images/avatars/avatar-3.png',
+                avatar: 'assets/images/avatars/avatar-2.png',
                 roles: []
             };
         }

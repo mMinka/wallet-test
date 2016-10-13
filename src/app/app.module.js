@@ -22,6 +22,7 @@
             angularDragula(angular),
             'ngFileUpload',
             'wallet-module',
+            'store-module',
             // uncomment above to activate the example seed module
             'app.translate'
             // only need one language?  if you want to turn off translations
